@@ -7,6 +7,7 @@ class JuegoTrivia {
       this.audioElement = document.getElementById('musica');
       this.clickSound = document.getElementById('clickSound');
       this.muteButton = document.getElementById('muteButton');
+      // Icono Mute 
       this.muteIcons = {
           unmute: document.querySelector('#muteButton .fa-volume-up'),
           mute: document.querySelector('#muteButton .fa-volume-mute'),
@@ -45,7 +46,8 @@ class JuegoTrivia {
           const pregunta = this.preguntas[this.preguntaActual];
           const preguntaDiv = document.getElementById('pregunta');
           preguntaDiv.innerHTML = pregunta.pregunta;
-
+          
+          // IMG DE ALGUNAS PREGUNTAS
           if (pregunta.img) {
               const imgElement = document.createElement('img');
               imgElement.src = pregunta.img;
@@ -63,9 +65,9 @@ class JuegoTrivia {
               button.onclick = () => this.verificarRespuesta(index);
               respuestasDiv.appendChild(button);
           });
-      } else {
+      }else {
           this.mostrarResultado();
-      }
+        }
   }
 
   verificarRespuesta(index) {
@@ -107,7 +109,7 @@ class JuegoTrivia {
           console.error('Error al reproducir la música:', error);
       });
   }
-
+  // BOTON PLAY AGAIN
   mostrarBotonJugarNuevamente() {
       const jugarNuevamenteButton = document.createElement('button');
       jugarNuevamenteButton.textContent = 'Jugar nuevamente';
@@ -115,13 +117,14 @@ class JuegoTrivia {
       document.getElementById('boton-jugar-nuevamente').appendChild(jugarNuevamenteButton);
   }
 
+  // MUTEAR Y DESMUTEAR
   toggleMute() {
       this.isMuted = !this.isMuted;
       this.audioElement.muted = this.isMuted;
       this.muteIcons.unmute.style.display = this.isMuted ? 'none' : 'inline';
       this.muteIcons.mute.style.display = this.isMuted ? 'inline' : 'none';
   }
-
+  
   playClickSound() {
       this.clickSound.play().catch(error => {
           console.error('Error al reproducir el sonido de clic:', error);
