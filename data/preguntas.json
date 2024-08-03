@@ -1,0 +1,54 @@
+[
+  {
+    "pregunta": "¿Que campeon es conocido como `El Glorioso Ejecutor`?",
+    "respuestas": ["Renekton", "Darius", "DRAAAAAAAAAAAVEN", "Aatrox"],
+    "correcta": 2
+  },
+
+  {
+    "pregunta": "En su salida, el glorioso Draven compartia pasiva con su hermano mayor Darius. Esto es:",
+    "respuestas": ["Mentira", "Verdad"],
+    "correcta": 1
+  },
+
+  {
+    "pregunta":"¿A que campeon pertence esta habilidad?",
+    "respuestas": ["Lee sin", "Maestro Yi","Nunu y Willump","Elise"],
+    "correcta":0,
+    "img":"assets/Lee_Sin_Q.webp"
+  },
+  {
+    "pregunta":"¿Qué pro player latinoamericano tiene al campeon anterior como su campeon insignia?",
+    "respuestas":["WhiteLotus","Cody","Oddie","Josedeodo"],
+    "correcta":3
+  },
+  {
+    "pregunta":"Josedeodo es conocido tambien como:",
+    "respuestas":["El abuelo","Carlitos","Tuki","Polimardo"],
+    "correcta":0
+  },
+  {
+    "pregunta":"Es la ultima pregunta sobre Jose,lo juro. ¿En qué equipo de la LCS jugo el abuelo?:",
+    "respuestas":["FlyQuest", "Team Liquid","Unicorns of Love","Cloud9"],
+    "correcta":0
+  },
+  {
+    "pregunta":"¿Qué campeon es conocido por llegar a su `Power spike` a las 10 muertes?:",
+    "respuestas":["Sion","Teemo","Yasuo","Vayne"],
+    "correcta":2
+  },
+  {
+    "pregunta":"Una pregunta sobre lore, Sett es un hibrido ¿De qué especies?:",
+    "respuestas":["Humano-Ascendido","Vastaya-Darkin","Vastaya-Humano","Humano-Yordle"],
+    "correcta":2
+  },
+  {
+    "pregunta":"ULTIMA PREGUNTA,¿Como es el nombre de esta habilidad?:",
+    "respuestas":["Diezmar","Vitamina C","(Se come una naranja)","Eliminar Escorbuto"],
+    "correcta":3,
+    "img":"assets/GangPlank_W.webp"
+
+  }
+
+]
+

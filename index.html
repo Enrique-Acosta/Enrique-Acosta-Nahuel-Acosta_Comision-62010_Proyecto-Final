@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Juego de Trivia</title>
+</head>
+<body>
+    <div id="inicio">
+        <h1>Bienvenido Invocador</h1>
+        <p>pondremos a prueba tu conocimiento de League of Legends</p>
+        <button id="comenzarJuego">Comenzar Juego</button>
+    </div>
+    
+    <div id="juego">
+        <h2>LoLQuizz</h2>
+        <div id="pregunta"></div>
+        <div id="respuestas"></div>
+        <div id="resultado"></div>
+        <div id="puntajes"></div>
+        <div id="boton-jugar-nuevamente"></div>
+    </div>
+ 
+    <div id="audio-controls">
+        <audio id="musica" src="assets/musica.mp3" loop></audio>
+        <button id="muteButton">
+            <i class="fas fa-volume-up" id="muteIcon"></i>
+            <i class="fas fa-volume-mute" style="display: none;"></i>
+        </button>
+        <audio id="clickSound" src="assets/click.mp3"></audio>
+    </div>
+
+<script src="JS/puntaje.js"></script>
+<script src="JS/main.js"></script>
+</body>
+</html>
+
+
